@@ -27,6 +27,18 @@ class _SearchresultState extends State<Searchresult> {
                 const EdgeInsets.only(top: 35.0, bottom: 15, left: 8, right: 8),
             child: Column(
               children: [
+                // Container()
+                Container(
+                  child: TextButton(
+                    child: Text(
+                      "Back To Home",
+                      style: TextStyle(color: Colors.white, fontSize: 15.0),
+                    ),
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context, '/HomePage');
+                    },
+                  ),
+                ),
                 RichText(
                   text: TextSpan(
                     text: widget.recipedetail!.title.toString(),

@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
     } else {
       if (datauser[0]['level'] == 'admin') {
         setState(() {
-          msg = "Login Member Success";
+          msg = "Login Admin Success";
           isLoginSuccess = true;
         });
         Navigator.pushReplacementNamed(context, '/HomePage');
